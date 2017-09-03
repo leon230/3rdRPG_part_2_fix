@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c608c828dc9cdea4580be41857c3bc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 468b20f0cf4b08849a8f1e62ac658843, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
   name: Shield

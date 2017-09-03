@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 7577794}
   - component: {fileID: 7577793}
   - component: {fileID: 7577792}
-  - component: {fileID: 7577791}
+  - component: {fileID: 7577796}
   m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
@@ -127,19 +127,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7577791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 7577790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdeb303e44a5ecb40a91c1c0d91a1a1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  interactionTransform: {fileID: 7577795}
 --- !u!23 &7577792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,6 +191,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7577796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7577790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404a7a3eb89deac4095dcf8373fb92d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  interactionTransform: {fileID: 7577795}
+  item: {fileID: 11400000, guid: e028462c12de9384cac379ec6d6443b5, type: 2}
 --- !u!1001 &11802477
 Prefab:
   m_ObjectHideFlags: 0
@@ -1065,6 +1066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281830409}
   - component: {fileID: 281830410}
+  - component: {fileID: 281830411}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -1089,7 +1091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -153.4, y: 186.95}
+  m_AnchoredPosition: {x: -153, y: 186.95}
   m_SizeDelta: {x: 289.6, y: 373.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &281830410
@@ -1098,6 +1100,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281830408}
+--- !u!114 &281830411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281830408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a9427045ac83745bd61c0573ceff12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  space: 20
 --- !u!1001 &283754275
 Prefab:
   m_ObjectHideFlags: 0
@@ -3342,7 +3357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000011444, y: 184}
+  m_AnchoredPosition: {x: -0.000015258789, y: 184}
   m_SizeDelta: {x: -125.6, y: -338.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870597315
@@ -4311,9 +4326,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132538096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b2bc614a70d047099d91ee3824a0314, type: 3}
+  m_Script: {fileID: 11500000, guid: 274241f246c628c4e9b16c91738885b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsParent: {fileID: 1522532617}
+  inventoryUI: {fileID: 281830408}
 --- !u!1 &1152042377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,16 +4460,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114339086328141694, guid: b07d631b4751ed244bd59bfc46331255,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114175760026555740, guid: b07d631b4751ed244bd59bfc46331255,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b07d631b4751ed244bd59bfc46331255, type: 2}
@@ -6909,6 +6916,7 @@ GameObject:
   - component: {fileID: 1858660799}
   - component: {fileID: 1858660798}
   - component: {fileID: 1858660797}
+  - component: {fileID: 1858660801}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -6980,6 +6988,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858660801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1858660795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404a7a3eb89deac4095dcf8373fb92d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  interactionTransform: {fileID: 1858660800}
+  item: {fileID: 11400000, guid: 7abb33edbbf6c4645b35dd5e988fec63, type: 2}
 --- !u!224 &1861054838 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224490888900118142, guid: b07d631b4751ed244bd59bfc46331255,
