@@ -8,9 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 468b20f0cf4b08849a8f1e62ac658843, type: 3}
-  m_Name: Shield
+  m_Script: {fileID: 11500000, guid: cd760e6cf70c9f744a66d6fd44498d82, type: 3}
+  m_Name: Sqord of destiny
   m_EditorClassIdentifier: 
-  name: Shield
-  icon: {fileID: 21300000, guid: d1232dfa270c51740bfc58b5930769c9, type: 3}
+  name: Sword of destiny
+  icon: {fileID: 21300000, guid: 46aa15c60366cc342811ac665199930a, type: 3}
   isDefaultItem: 0
+  eqSlot: 3
+  armorModifier: 0
+  damageModifier: 5
