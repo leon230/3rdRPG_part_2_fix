@@ -17,5 +17,5 @@ MonoBehaviour:
   eqSlot: 0
   mesh: {fileID: 137231563959787486, guid: 4e8740f5a6c9c364b9dd7e96fb8509fd, type: 2}
   coveredMeshRegions: 
-  armorModifier: 0
+  armorModifier: 1
   damageModifier: 3
