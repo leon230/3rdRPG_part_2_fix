@@ -3730,6 +3730,7 @@ GameObject:
   - component: {fileID: 906688583}
   - component: {fileID: 906688582}
   - component: {fileID: 906688581}
+  - component: {fileID: 906688588}
   - component: {fileID: 906688580}
   - component: {fileID: 906688585}
   - component: {fileID: 906688586}
@@ -3857,6 +3858,18 @@ MonoBehaviour:
     baseValue: 0
   armor:
     baseValue: 0
+--- !u!114 &906688588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906688579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a7f9c899b38494dbd009437975ccb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!1 &935736076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,6 +8526,7 @@ GameObject:
   - component: {fileID: 1966828261}
   - component: {fileID: 1966828260}
   - component: {fileID: 1966828259}
+  - component: {fileID: 1966828265}
   - component: {fileID: 1966828258}
   - component: {fileID: 1966828264}
   - component: {fileID: 1966828263}
@@ -8627,6 +8641,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 1966828262}
+--- !u!114 &1966828265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1966828257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a7f9c899b38494dbd009437975ccb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!1001 &1977847480
 Prefab:
   m_ObjectHideFlags: 0

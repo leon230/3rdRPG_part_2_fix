@@ -28,7 +28,7 @@ public class CharacterStats : MonoBehaviour {
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         curentHealth -= damage;
-        Debug.Log(transform.name + "takes " + damage + " damage");
+        Debug.Log(transform.name + " takes " + damage + " damage");
 
         if (curentHealth <= 0)
         {
